@@ -1,0 +1,23 @@
+{
+  "enabled": true,
+  "preset": "minimal",
+  "tools": {
+    "displayMode": "one-line",
+    "collapseByDefault": true,
+    "argsMaxChars": 120
+  },
+  "bash": {
+    "outputVisible": false,
+    "storeHiddenOutput": true,
+    "viewer": {
+      "enabled": true,
+      "maxStoredCommands": 20,
+      "pageSize": 20
+    }
+  },
+  "shortcuts": {
+    "togglePiGlance": "ctrl+shift+c",
+    "toggleToolDetails": "ctrl+alt+b",
+    "openBashViewer": "ctrl+shift+b"
+  }
+}

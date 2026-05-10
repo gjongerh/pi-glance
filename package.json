@@ -1,0 +1,35 @@
+{
+  "name": "pi-glance",
+  "version": "0.1.0",
+  "description": "Compact tool summaries and an output viewer for pi.",
+  "type": "commonjs",
+  "license": "ISC",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi-glance"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gjongerh/pi-glance.git"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "npm run typecheck"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.74.0",
+    "@earendil-works/pi-tui": "^0.74.0",
+    "@types/node": "^25.6.2",
+    "typescript": "^6.0.3"
+  }
+}

@@ -55,6 +55,8 @@ Configuration is loaded from:
 
 Project config overrides global config.
 
+See `examples/pi-glance.json` for a starter configuration.
+
 Example:
 
 ```json
@@ -104,10 +106,23 @@ pi -e git:github.com/gjongerh/pi-glance
 
 ## Development
 
-From the repository root, run:
+Install dependencies and run type checking from the repository root:
+
+```bash
+npm install
+npm test
+```
+
+For local development from the parent `extensions/` workspace, the parent `Makefile` can run the same checks:
 
 ```bash
 make test
 ```
 
-This runs TypeScript type checking for `pi-glance/index.ts`.
+Try the extension without installing it permanently:
+
+```bash
+pi -e ./src/index.ts
+```
+
+The Pi package manifest points at `src/index.ts`.

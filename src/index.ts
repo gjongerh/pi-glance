@@ -681,7 +681,7 @@ export default function piGlance(pi: ExtensionAPI) {
 						// renderCall() line (the command). Do not add a second status/result line.
 						return emptyComponent();
 					}
-					if (name === "read" || name === "edit") {
+					if (name === "read" || name === "edit" || name === "write") {
 						return emptyComponent();
 					}
 					const line = `${theme.fg("success", "✓")} ${name} ${theme.fg("dim", "completed; Ctrl+Alt+B for details")}`;
